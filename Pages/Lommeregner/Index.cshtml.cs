@@ -23,13 +23,13 @@ namespace MatchMakerDBU.Pages.Lommeregner
             double GennemsnitHold1 = UdregnGennemsnit(1);
             double GennemsnitHold2 = UdregnGennemsnit(2);
 
-            ////  Hack
+            //////  Hack
             //SpillerServiceJson service = new SpillerServiceJson();
             //foreach (var spiller in _service.GetAllSpillere())
             //{
             //    service.Add(spiller);
             //}
-            //// slut hack
+            ////// slut hack
 
 
 

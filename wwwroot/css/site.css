@@ -14,5 +14,12 @@ html {
 }
 
 body {
+
   margin-bottom: 60px;
+
+
+}
+
+.container{
+    border-radius:5px;
 }

@@ -1,7 +1,7 @@
 ﻿using MatchMakerDBU.Model;
 using System.Text.Json;
 
-
+//Bjørn med tilføjelser fra Nikolaj
 namespace MatchMakerDBU.Services
 {
     public class SpillerServiceJson : ISpillerService

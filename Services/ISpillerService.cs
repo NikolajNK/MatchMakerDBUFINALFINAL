@@ -1,6 +1,7 @@
 ﻿using MatchMakerDBU.Model;
 namespace MatchMakerDBU.Services
 {
+    //Bjørn med tilføjelser fra Nikolaj
     public interface ISpillerService
     {
         public List<Spiller> GetAllSpillere();

@@ -1,17 +1,26 @@
 ﻿@page
 @model MatchMakerDBU.Pages.Lommeregner.CreateSpillerModel
 @{
+   
 }
 
 @*Nikolaj*@
 
-<h1>Opret spiller</h1>
+<head>
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+
+<div class="container border-2 rounded-2">
+
+   <h1>Opret Spiller</h1>
+
 
 <div class="row">
-    <div class="col-md-6">
+        <div class="col-md-6 text-white bg-danger">
+        
         <form method="post">
             <div class="form-group">
-                <label asp-for="@Model.Spiller.Nummer" class="control-label">nummer</label><br>
+                <label asp-for="@Model.Spiller.Nummer" class="control-label">Nummer</label><br>
                 <input asp-for="@Model.Spiller.Nummer" class="form-control" /><br>
             </div>
 
@@ -23,10 +32,19 @@
                 <label>Rating</label><br>
                 <input asp-for="@Model.Spiller.Rating" class="form-control" /><br />
             </div>
+
+
+
             <div class="form-group">
-                <label>Position</label><br>
+                
+                    <label>Position</label><br>
+                    <p>Du kan vælge: "Målmand", "Forsvar", "Midtbane" eller "Angriber"</p>
+              
                 <input asp-for="@Model.Position" class="form-control" /><br />
             </div>
+
+
+
             <div class="form-group">
                 <label>Hold (1 for danmark, 2 for modstander)</label><br>
                 <input asp-for="@Model.Spiller.Hold" class="form-control" /><br />
@@ -48,6 +66,8 @@
 
     </div>
         
+    </div>
 
+  
 </div>
 

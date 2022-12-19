@@ -2,7 +2,7 @@
 using MatchMakerDBU.Model;
 
 namespace MatchMakerDBU.Services
-{
+{//Bjørn med tilføjelser fra Nikolaj
     public class SpillerService : ISpillerService
     {
         private Danmark _spillere = new Danmark();

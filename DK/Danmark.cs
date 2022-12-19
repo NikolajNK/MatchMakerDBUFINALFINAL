@@ -1,5 +1,5 @@
 ﻿using MatchMakerDBU.Model;
-
+//Bjørn med tilføjelser fra Nikolaj
 namespace MatchMakerDBU.DK
 {
     public class Danmark : Holdspiller

@@ -2,6 +2,8 @@ using MatchMakerDBU.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//Nikolaj og Bjørn
+
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton<ISpillerService, SpillerServiceJson>();

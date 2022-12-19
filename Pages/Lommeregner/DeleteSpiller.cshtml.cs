@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MatchMakerDBU.Pages.Lommeregner
 {
+    //Nikolaj
     public class DeleteSpillerModel : PageModel
     {
 

@@ -2,7 +2,7 @@ using MatchMakerDBU.Model;
 using MatchMakerDBU.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-
+//Nikolaj
 namespace MatchMakerDBU.Pages.Lommeregner
 {
     public class CreateSpillerModel : PageModel

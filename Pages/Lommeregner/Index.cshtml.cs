@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MatchMakerDBU.Pages.Lommeregner
 {
+
+    //Bjørn og Nikolaj
+
     public class IndexModel : PageModel
     {
         private ISpillerService _service;

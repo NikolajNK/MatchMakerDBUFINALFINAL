@@ -1,5 +1,5 @@
 ﻿namespace MatchMakerDBU.Model
-{
+{//Bjørn med tilføjelser fra Nikolaj
     public class Spiller : Holdspiller
     {
         public Spiller()

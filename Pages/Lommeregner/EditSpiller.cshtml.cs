@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MatchMakerDBU.Pages.Lommeregner
 {
+    //Bjørn
     public class EditSpillerModel : PageModel
     {
         private ISpillerService _service;

@@ -68,11 +68,11 @@ namespace MatchMakerDBU.Pages.Lommeregner
 
             if (gennemsnitHold1 > gennemsnitHold2)
             {
-                return "Hold 1 vinder";
+                return "Danmark";
             }
             else if (gennemsnitHold2 > gennemsnitHold1)
             {
-                return "Hold 2 vinder";
+                return "Modstander";
             }
             else
             {

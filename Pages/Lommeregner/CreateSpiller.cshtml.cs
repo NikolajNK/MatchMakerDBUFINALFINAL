@@ -22,6 +22,7 @@ namespace MatchMakerDBU.Pages.Lommeregner
         public string Position { get => position; set => position = value.ToLower(); }
 
 
+
         public CreateSpillerModel(ISpillerService service)
         {
             _service = service;

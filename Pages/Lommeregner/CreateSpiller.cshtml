@@ -21,27 +21,27 @@
         <form method="post">
             <div class="form-group">
                 
-                <label asp-for="@Model.Spiller.Nummer" class="control-label"><h4>Nummer</h4></label><br>
+                <label asp-for="@Model.Spiller.Nummer" class="control-label"><h3>Nummer</h3></label><br>
                     <p>Hvilket trøjenummer har spilleren?</p>
                 <input asp-for="@Model.Spiller.Nummer" class="form-control" /><br>
             </div>
             
             <div class="form-group">
-                <h4>Navn</h4><br>
+                
+                    <label asp-for="@Model.Spiller.Name" class="control-label"><h3>Navn</h3></label><br>
                 <p>Hvad er spilleren navn?</p>
                 <input asp-for="@Model.Spiller.Name" class="form-control" /><br />
             </div>
+
             <div class="form-group">
-                <h4>Rating</h4><br>
+                    <label asp-for="@Model.Spiller.Rating" class="control-label"><h3>Rating</h3></label><br>
                 <p>Hvad er spilleren rating?</p>
                 <input asp-for="@Model.Spiller.Rating" class="form-control" /><br />
             </div>
 
-
-
             <div class="form-group">
-                
-                    <h4>Position</h4><br>
+
+                    <label asp-for="@Model.Position" class="control-label"><h3>Position</h3></label><br>
                     <p>Hvad er spilleren position?</p>
                     <p>Du kan vælge: "Målmand", "Forsvar", "Midtbane" eller "Angriber"</p>
               
@@ -51,7 +51,7 @@
 
 
             <div class="form-group">
-                <h4>Hold</h4>
+                <h3>Hold</h3>
                 <p>Hvilket hold skal spilleren på?</p>
                 <label>Hold (1 for danmark, 2 for modstander)</label><br>
                 <input asp-for="@Model.Spiller.Hold" class="form-control" /><br />

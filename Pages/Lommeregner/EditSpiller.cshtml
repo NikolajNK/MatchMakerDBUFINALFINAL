@@ -1,7 +1,7 @@
 ﻿@page
 @model MatchMakerDBU.Pages.Lommeregner.EditSpillerModel
 @{
-    <h1>Ændre Spiller @Model.Nummer @Model.Name</h1>
+    
     //Bjørn
 
 
@@ -39,13 +39,14 @@
 
 
     //</div>
+    
 
 
+  <div class="container border-2 rounded-2">
 
-
-
+        <h1>Ændre Spiller @Model.Nummer @Model.Name</h1>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 text-white bg-danger">
             <form method="post">
                 <div class="form-group">
                     <labet>Nummer</labet><br>
@@ -67,6 +68,7 @@
                     <label>Position</label><br>
                     <input asp-for="@Model.Position" /><br />
                 </div>
+                <p></p>
                 <div class="form-group">
                     <label>Hold</label><br>
                     <input asp-for="@Model.Hold" class="form-control" /><br />
@@ -77,16 +79,18 @@
 
                 <form method="post">
                     <div class="form-group">
-                        <input type="submit" value="Edit Spiller" asp-page-handler="Edit" asp-route-nummer="@Model.Nummer" class="btn btn-success" />
+                        <input type="submit" value="Ændre @Model.Name" asp-page-handler="Edit" asp-route-nummer="@Model.Nummer" class="btn btn-dark" />
                     </div>
+                    <p></p>
                     <div class="form-group">
-                        <input type="submit" value="Fortryd" asp-page-handler="Fortryd" class="btn btn-primary" />
+                        <input type="submit" value="Fortryd" asp-page-handler="Fortryd" class="btn btn-dark" />
                     </div>
+                    <p></p>
                 </form>
 
             </form>
         </div>
     </div>
 
-
+    </div>
 }

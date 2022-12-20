@@ -4,22 +4,33 @@
 }
 @*Nikolaj*@
 
-<h1>Vil du slette spilleren</h1>
+<div class="container border-2 rounded-2">
+<h1>Slet Spiller</h1>
 
-<p>Nummer:  @Model.SletSpiller.Nummer</p>
-<p>Navn:    @Model.SletSpiller.Name</p>
-<p>Rating:  @Model.SletSpiller.Rating</p>
-<p>Position:  @Model.SletSpiller.Type</p>
+    <div class="row">
+        <div class="col-sm-3 text-white bg-danger">
+
+<p>Nummer:<kbd>@Model.SletSpiller.Nummer</kbd></p>
+<p></p>
+<p>Navn: <kbd>@Model.SletSpiller.Name</kbd></p>
+<p></p>
+<p>Rating:  <kbd>@Model.SletSpiller.Rating</kbd></p>
+<p></p>
+<p>Position:  <kbd>@Model.SletSpiller.Type</kbd></p>
 
 <p></p>
 <form method="post">
     <div class="form-group">
-        <input type="submit" value="Slet Spiller" asp-page-handler="Slet" asp-route-nummer="@Model.SletSpiller.Nummer" class="btn btn-danger" />
+        <input type="submit" value="Slet Spiller" asp-page-handler="Slet" asp-route-nummer="@Model.SletSpiller.Nummer" class="btn btn-dark" />
     </div>
+    <p></p>
     <div class="form-group">
-        <input type="submit" value="Fortryd" asp-page-handler="Fortryd" class="btn btn-primary" />
+        <input type="submit" value="Fortryd" asp-page-handler="Fortryd" class="btn btn-dark" />
     </div>
+    <p></p>
 </form>
 
 
-
+</div>
+</div>
+</div>

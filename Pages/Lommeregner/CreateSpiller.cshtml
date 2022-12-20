@@ -20,16 +20,20 @@
         
         <form method="post">
             <div class="form-group">
-                <label asp-for="@Model.Spiller.Nummer" class="control-label">Nummer</label><br>
+                
+                <label asp-for="@Model.Spiller.Nummer" class="control-label"><h4>Nummer</h4></label><br>
+                    <p>Hvilket trøjenummer har spilleren?</p>
                 <input asp-for="@Model.Spiller.Nummer" class="form-control" /><br>
             </div>
 
             <div class="form-group">
-                <label>Navn</label><br>
+                <h4>Navn</h4><br>
+                <p>Hvad er spilleren navn?</p>
                 <input asp-for="@Model.Spiller.Name" class="form-control" /><br />
             </div>
             <div class="form-group">
-                <label>Rating</label><br>
+                <h4>Rating</h4><br>
+                <p>Hvad er spilleren rating?</p>
                 <input asp-for="@Model.Spiller.Rating" class="form-control" /><br />
             </div>
 
@@ -37,7 +41,8 @@
 
             <div class="form-group">
                 
-                    <label>Position</label><br>
+                    <h4>Position</h4><br>
+                    <p>Hvad er spilleren position?</p>
                     <p>Du kan vælge: "Målmand", "Forsvar", "Midtbane" eller "Angriber"</p>
               
                 <input asp-for="@Model.Position" class="form-control" /><br />
@@ -46,6 +51,8 @@
 
 
             <div class="form-group">
+                <h4>Hold</h4>
+                <p>Hvilket hold skal spilleren på?</p>
                 <label>Hold (1 for danmark, 2 for modstander)</label><br>
                 <input asp-for="@Model.Spiller.Hold" class="form-control" /><br />
             </div>
@@ -56,8 +63,11 @@
             }
 
             <div class="form-group">
-                <input type="submit" value="Opret spiller" />
+                <input type="submit" value="Opret spiller class btn btn-" />
             </div>
+                <div class="form-group">
+                    <input type="submit" value="Fortryd" asp-page-handler="Fortryd" class="btn btn-dark" />
+                </div>
 
         </form>
 

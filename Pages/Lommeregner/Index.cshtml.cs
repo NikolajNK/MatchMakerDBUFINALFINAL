@@ -17,6 +17,7 @@ namespace MatchMakerDBU.Pages.Lommeregner
         }
 
         public List<Spiller> Spillere { get; set; }
+        public string Resultat { get; set; }
 
         public void OnGet()
         {
@@ -25,6 +26,10 @@ namespace MatchMakerDBU.Pages.Lommeregner
             //Nikolaj laver gennemsnsitsmetode
             double GennemsnitHold1 = UdregnGennemsnit(1);
             double GennemsnitHold2 = UdregnGennemsnit(2);
+
+
+            Resultat = CalculateWinner();
+
 
             //////  Hack
             //SpillerServiceJson service = new SpillerServiceJson();
@@ -54,6 +59,25 @@ namespace MatchMakerDBU.Pages.Lommeregner
             double average = sum / players.Count();
 
             return average;
+        }
+
+        public string CalculateWinner()
+        {
+            double gennemsnitHold1 = UdregnGennemsnit(1);
+            double gennemsnitHold2 = UdregnGennemsnit(2);
+
+            if (gennemsnitHold1 > gennemsnitHold2)
+            {
+                return "Hold 1 vinder";
+            }
+            else if (gennemsnitHold2 > gennemsnitHold1)
+            {
+                return "Hold 2 vinder";
+            }
+            else
+            {
+                return "Uafgjort";
+            }
         }
 
     }
